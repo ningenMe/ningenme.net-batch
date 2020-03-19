@@ -1,9 +1,11 @@
 from urllib import request
 from bs4 import BeautifulSoup
 import sys
-import os
 import re
-sys.path.append(os.path.dirname(__file__)+'/../lib')
+import pathlib
+
+path = pathlib.Path(__file__)
+sys.path.append(str(path.parent)+'/../lib')
 import Log
 
 class AtcoderPageDomain:

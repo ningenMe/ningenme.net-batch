@@ -1,10 +1,11 @@
 import datetime
-import os
+import pathlib
+path = pathlib.Path(__file__)
 
 def write(log_level,message):
     now      = datetime.datetime.now()
     date_str = now.strftime("%Y-%m-%d_%H:%M:%S")
-    filepath = os.path.dirname(__file__) + "/../../log/" + now.strftime("%Y-%m-%d") + ".txt"
+    filepath = str(path.parent) + "/../../log/" + now.strftime("%Y-%m-%d") + ".txt"
     message  = log_level + " " + date_str + " " + str(message) + "\n"
     file = open(filepath,'a')
     file.write(message)
