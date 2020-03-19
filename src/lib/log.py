@@ -1,6 +1,6 @@
 import datetime
 import pathlib
-path = pathlib.Path(__file__)
+path = pathlib.Path(__file__).resolve()
 
 def write(log_level,message):
     now      = datetime.datetime.now()
