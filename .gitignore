@@ -1,5 +1,5 @@
 .vscode
 *.txt
 *.pyc
-log/*
+log/*.txt
 __pycache__
