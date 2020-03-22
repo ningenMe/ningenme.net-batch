@@ -2,4 +2,4 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/batch
+    destination: /home/ec2-user/prod-batch
