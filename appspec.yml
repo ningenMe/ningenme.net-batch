@@ -10,6 +10,12 @@ permissions:
     group: ec2-user
     mode: 744
 
+  - object: /home/ec2-user/prod-batch
+    owner: root
+    group: root
+    mode: 777
+    type: directory
+
 hooks:
   ApplicationStart:
     - location: deploy/crontab.sh
