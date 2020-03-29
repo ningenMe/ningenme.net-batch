@@ -8,7 +8,7 @@ permissions:
   - object: /home/ec2-user/prod-batch
     owner: root
     group: root
-    mode: 744
+    mode: 777
 
 hooks:
   ApplicationStart:
