@@ -3,3 +3,4 @@
 *.pyc
 log/*.txt
 __pycache__
+*Env.py
