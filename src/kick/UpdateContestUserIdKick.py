@@ -5,11 +5,11 @@ path = pathlib.Path(__file__).resolve()
 sys.path.append(str(path.parent)+'/../lib')
 sys.path.append(str(path.parent)+'/../scenario')
 import Log
-import UpdateContestUserScenario
+import UpdateContestUserIdScenario
 
-def kick():
+def kick(site="atcoder"):
     Log.info(str(path.name) + ": start")
-    UpdateContestUserScenario.main("atcoder")
+    UpdateContestUserIdScenario.main(site)
     Log.info(str(path.name) + ": end\n")
 
 if __name__ == "__main__":
