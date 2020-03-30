@@ -15,5 +15,4 @@ def main(site):
     if userListPageNum == -1:
         Log.error(str(path.parent) + " failed get ranking page num\n")
         sys.exit(0)
-    Log.info(userListPageNum)
     return userListPageNum

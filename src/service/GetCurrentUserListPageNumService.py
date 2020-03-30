@@ -6,7 +6,7 @@ sys.path.append(str(path.parent)+'/../domain')
 import Log
 import BatchDomain
 
-def main(site, userListPageNum):
+def main(site):
     batchDomain = BatchDomain.BatchDomain()
-    batchDomain.updateAllUserListPageNum(site,userListPageNum)    
-    return
+    currentUserListPageNum = batchDomain.getCurrentUserListPageNum(site)    
+    return currentUserListPageNum

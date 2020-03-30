@@ -8,5 +8,5 @@ import BatchDomain
 
 def main(site, userListPageNum):
     batchDomain = BatchDomain.BatchDomain()
-    batchDomain.updateAllUserListPageNum(site,userListPageNum)    
+    batchDomain.updateCurrentUserListPageNum(site,userListPageNum)    
     return
