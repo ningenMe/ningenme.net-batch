@@ -16,3 +16,6 @@ hooks:
       runas: root
     - location: deploy/env.sh
       runas: root    
+  ValidateService:
+    - location: deploy/notification.sh
+      runas: root    

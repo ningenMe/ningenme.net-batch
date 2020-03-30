@@ -1,0 +1,2 @@
+url=`sudo -u ec2-user aws ssm get-parameters --name SLACK_WEBHOOK_URL --query "Parameters[*].{Value: Value}" --output text`
+curl -X POST --data-urlencode "payload={\"text\":\"succeeded batch deploy\",\"channel\":\"#log-info\",}" $url
