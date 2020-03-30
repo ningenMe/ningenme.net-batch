@@ -1,1 +1,1 @@
-/usr/bin/crontab /home/ec2-user/prod-batch/src/conf/crontab
+sudo -u ec2-user /usr/bin/crontab /home/ec2-user/prod-batch/src/conf/crontab
