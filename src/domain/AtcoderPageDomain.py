@@ -21,4 +21,17 @@ class AtcoderPageDomain:
         except Exception as e:
             Log.error(e)
             return -1
-        return rankingPageNum        
+        return rankingPageNum
+
+    def getUserIdList(self,index):
+        userIdList = []
+        try:
+            html = request.urlopen(AtcoderPageDomain.rankingUrl+"?page="+str(index))
+            tags = BeautifulSoup(html, "html.parser").find_all("a", href=re.compile("/users/"))
+            for tag in tags:
+                userIdList.append(tag.text)
+        except Exception as e:
+            Log.error(e)
+            return False
+        return userIdList
+
