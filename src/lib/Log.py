@@ -38,5 +38,10 @@ def error(message=""):
     write(message)
     slack("#log-error",message)
 
+def debug(message=""):
+    message = makeMessage("DEBUG",message)
+    write(message)
+    slack("#log-debug",message)
+
 if __name__ == "__main__":
-    info("テスト")
+    debug("テスト")

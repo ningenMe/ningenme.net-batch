@@ -18,6 +18,6 @@ def main(site,begin,end):
         # update
         UpdateCurrentUserListPageNumService.main(site,index)
         # sleep
-        Log.info(index)
+        Log.debug(index)
         time.sleep(3)
 
