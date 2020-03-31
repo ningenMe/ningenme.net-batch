@@ -19,5 +19,5 @@ def main(site,begin,end):
         UpdateCurrentUserListPageNumService.main(site,index)
         # sleep
         Log.info(index)
-        time.sleep(1)
+        time.sleep(3)
 
